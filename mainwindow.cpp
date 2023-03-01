@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "firstwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -24,6 +23,10 @@ void MainWindow::on_pushButton_Exit_clicked()
 
 void MainWindow::on_pushButton_Rozpocznij_clicked()
 {
-
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
+void MainWindow::on_pushButton_InsertCup_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}

@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "firstwindow.h"
+
 
 
 QT_BEGIN_NAMESPACE
@@ -22,9 +22,10 @@ private slots:
 
     void on_pushButton_Rozpocznij_clicked();
 
+    void on_pushButton_InsertCup_clicked();
+
 private:
     Ui::MainWindow *ui;
-    FirstWindow *fWindow;
     MainWindow *mWindow;
 };
 #endif // MAINWINDOW_H
