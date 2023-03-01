@@ -30,8 +30,23 @@
     <string notr="true">background-color: rgb(204, 204, 204);</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="1">
+    <property name="leftMargin">
+     <number>250</number>
+    </property>
+    <property name="topMargin">
+     <number>250</number>
+    </property>
+    <property name="rightMargin">
+     <number>250</number>
+    </property>
+    <property name="bottomMargin">
+     <number>250</number>
+    </property>
+    <item row="0" column="2">
      <widget class="QPushButton" name="pushButton_Exit">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="minimumSize">
        <size>
         <width>50</width>
@@ -52,32 +67,36 @@
     <item row="0" column="0">
      <widget class="QStackedWidget" name="stackedWidget">
       <widget class="QWidget" name="Main_Page">
-       <widget class="QPushButton" name="pushButton_Rozpocznij">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>350</width>
-          <height>350</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>350</width>
-          <height>350</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>350</width>
-          <height>350</height>
-         </size>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::ClickFocus</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">#pushButton_Rozpocznij{
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>MainPage</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="pushButton_Rozpocznij">
+          <property name="minimumSize">
+           <size>
+            <width>350</width>
+            <height>350</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>350</width>
+            <height>350</height>
+           </size>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::ClickFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">#pushButton_Rozpocznij{
 background-color: transparent;
 border-image: url(:/QT_layout/Rozpocznij.png);
 background: none;
@@ -87,31 +106,32 @@ background-repeat: none;
 #pushButton_Rozpocznij:pressed{
 border-image: url(:/QT_layout/Rozpocznij_pressed.png);
 }</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label">
-        <property name="geometry">
-         <rect>
-          <x>550</x>
-          <y>40</y>
-          <width>67</width>
-          <height>17</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>MainPage</string>
-        </property>
-       </widget>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QWidget" name="Insert_cup">
+       <property name="minimumSize">
+        <size>
+         <width>1920</width>
+         <height>1080</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>1920</width>
+         <height>1080</height>
+        </size>
+       </property>
        <widget class="QPushButton" name="pushButton_InsertCup">
         <property name="geometry">
          <rect>
-          <x>0</x>
-          <y>0</y>
+          <x>785</x>
+          <y>365</y>
           <width>350</width>
           <height>350</height>
          </rect>
@@ -150,14 +170,14 @@ border-image: url(:/QT_layout/Rozpocznij_pressed.png);
        <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
-          <x>630</x>
-          <y>60</y>
-          <width>67</width>
-          <height>17</height>
+          <x>760</x>
+          <y>0</y>
+          <width>400</width>
+          <height>30</height>
          </rect>
         </property>
         <property name="text">
-         <string>InsertCup</string>
+         <string>Insert Cup</string>
         </property>
        </widget>
       </widget>
