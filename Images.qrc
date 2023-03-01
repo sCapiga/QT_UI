@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../QT_layout/Rozpocznij_pressed.png</file>
+        <file>../../QT_layout/Rozpocznij.png</file>
+    </qresource>
+</RCC>
