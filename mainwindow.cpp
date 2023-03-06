@@ -7,26 +7,31 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QMainWindow::showFullScreen();
+
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-}
 
+}
 
 void MainWindow::on_pushButton_Exit_clicked()
 {
     MainWindow::close();
 }
 
-
 void MainWindow::on_pushButton_Rozpocznij_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
 
-void MainWindow::on_pushButton_InsertCup_clicked()
+
+void MainWindow::on_pushButton_back_clicked()
 {
-    ui->stackedWidget->setCurrentIndex(0);
+    int curr = 0;
+    curr = this->ui->stackedWidget->currentIndex();
+    this->ui->stackedWidget->setCurrentIndex(curr-1);
+    pushButton_back->hide();
 }
+

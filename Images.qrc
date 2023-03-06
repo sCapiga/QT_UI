@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>../../QT_layout/Rozpocznij_pressed.png</file>
         <file>../../QT_layout/Rozpocznij.png</file>
+        <file>../../QT_layout/Button_Back_pressed.png</file>
+        <file>../../QT_layout/Button_Back.png</file>
     </qresource>
 </RCC>

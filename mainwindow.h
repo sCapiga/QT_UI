@@ -17,15 +17,17 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
 private slots:
     void on_pushButton_Exit_clicked();
 
     void on_pushButton_Rozpocznij_clicked();
 
-    void on_pushButton_InsertCup_clicked();
-
+    void on_pushButton_back_clicked();
 private:
     Ui::MainWindow *ui;
-    MainWindow *mWindow;
+
+
+
 };
 #endif // MAINWINDOW_H
