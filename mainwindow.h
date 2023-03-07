@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "page_1.h"
 
 
 
@@ -18,6 +19,7 @@ public:
     ~MainWindow();
 
 
+
 private slots:
     void on_pushButton_Exit_clicked();
 
@@ -27,9 +29,11 @@ private slots:
 
 
 
+    void on_pushButton_next_clicked();
+
 private:
     Ui::MainWindow *ui;
-
+    Page_1 page1;
 };
 #endif // MAINWINDOW_H
 
@@ -57,5 +61,5 @@ private:
     Ui::Page_1 *ui;
 
 };
-#endif // MAINWINDOW_H
-    */
+*/
+
